@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Page</title>
+  
+</head>
+<body>
+       
+<form action ="/html-portfolio/details.html">
+
+ <caption>
+     <u>Monthly Expense Report</u><br><br>
+    </caption>   
+    <table>
+        <tr>
+            <td><label for = "date">Date:</label>  </td>
+            <td><input type="date" id ="date" name ="date"></td>
+        </tr>
+        <tr>
+            <td><label for = "mortgage">Mortgage:</label>  </td>
+            <td><input type="number" id ="mortgage" name ="mortgage" min="1000" max="50000" ></td>
+        </tr>
+        <tr>
+        <td><label for = "gas">Gas:</label></td>
+        <td><input type="number" id ="gas" name ="gas" min="100" max="500"></td>   
+    </tr>   
+    <tr>
+        <td><label for = "child">Child Care:</label></td>
+        <td><input type="number" id ="childCare" name ="childCare" min="200" max="1000"></td>   
+    </tr> 
+    <tr>
+        <td><label for = "insurance">Insurance:</label></td>
+        <td><input type="number" id ="insurance" name ="insurance" min="500" max="10000"></td>   
+    </tr>
+    <tr>
+    <td><input type="radio" id="type1" name="term" value="monthly"></td>
+    <td><label for = "monthly">Monthly</label></td>
+    <td><input type="radio" id="type2" name="term" value="yearly"></td>
+    <td><label for = "yearly">Yearly</label></td>
+    </tr>
+    <tr>
+        <td><label for = "misc">Misc:</label></td>
+        <td>
+            <!-- Data list-->
+           <input list = "misc">
+           <datalist id ="misc">
+               <option value = "utility">
+                <option value = "internal">
+                <option value = "mobile">       
+           </datalist>        
+        </td>
+      <!--<td><input type="number" id ="misc" name ="misc"></td> -->
+    </tr>
+    </table><br><br>
+    <input type = "submit" name = "submit" value ="Save">
+    </form>
+    </body>
+</html>

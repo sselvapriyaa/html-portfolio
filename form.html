@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+<body>
+<form action ="/html-portfolio/index.html">
+        
+    <table>
+        <tr>
+            <td><label for = "uname">User Name:</label>  </td>
+            <td><input type="text" id ="uname" name ="uname" placeholder ="enter user name"/></td>
+        </tr>
+        <tr>
+        <td><label for = "pwd">Password:</label></td>
+        <td><input type="password" id ="pwd" name ="pwd" placeholder ="enter password"/></td>
+    
+    </tr>
+    <tr>
+        <td><label for = "email">Email:</label></td>
+        <td><input type="email" id="email" name ="pwd" placeholder ="enter email"/></td>
+    </tr>
+    <tr>
+    <td><label for = "add">Address:</label></td>
+        <td><textarea id="add"></textarea></td>
+        </tr>
+    <tr>
+        <td><input type="radio" id="type1" name="empType" value="Regular" checked></td>
+        <td><label for = "type1">Regular</label></td>
+        <td><input type="radio" id="type2" name="empType" value="PartTime"></td>
+        <td><label for = "type2">Part Time</label></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id = "city1" name ="city1" value = "NewYork" checked></td>
+        <td><label for = "city1">New York</label></td>
+        <td><input type="checkbox" id = "city2" name ="city2" value = "Dallas"></td>
+        <td><label for = "city2">Dallas</label></td>
+    </tr>
+    <tr>
+    <td><label for="country">Select Country</label></td>
+    </tr>
+       <select id="country" name ="countrySelection" multiple>
+        <option>Select</option>
+        <option value ="usa">USA</option>
+        <option value ="india">India</option>
+        <option value ="britain">UK</option>
+        </select> 
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <input list="browser">
+            <datalist id="browser">
+                <option value ="IE">
+                    <option value ="Chrome">
+                        <option value ="Safari">
+                        </datalist>
+
+                </option>    
+        </td>
+    </tr>
+        </table><br><br>
+        <input type = "submit"  name = "submit" value ="sign up"><br><br>
+        <input type = "button"  name = "btn1" value ="click me" onclick="alert('Button Clicked')";>
+<fieldset>
+    <legend>Personal Information</legend>
+    <label for="username">User Name:</label>
+    <input type="text" id ="uname" name ="uname" placeholder ="enter user name"/>
+    <label for="add">Address:</label>
+    <textarea id="add"></textarea>    
+</fieldset>
+</form>
+</body>
+</html>
