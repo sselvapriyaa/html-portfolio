@@ -7,8 +7,7 @@
     <title>My Page</title>
 </head>
 <body>
-<form action ="/html-portfolio/index.html" method ="post">
-        
+<form action ="/html-portfolio/index.html" method ="post">       
     <table>
         <tr>
             <td><label for = "uname">User Name:</label>  </td>
@@ -21,12 +20,12 @@
     </tr>
     <tr>
         <td><label for = "email">Email:</label></td>
-        <td><input type="email" id="email" name ="pwd" placeholder ="enter email"/></td>
+        <td><input type="email" id="email" name ="email" placeholder ="enter email"/></td>
     </tr>
     <tr>
     <td><label for = "add">Address:</label></td>
-        <td><textarea id="add" ></textarea></td>
-        </tr>
+        <td><textarea id="add"></textarea></td>
+    </tr>
     <tr>
         <td><input type="radio" id="type1" name="empType" value="Regular" checked></td>
         <td><label for = "type1">Regular</label></td>
@@ -42,6 +41,14 @@
     <tr>
     <td><label for="country">Select Country</label></td>
     </tr>
+    <tr>
+        <td><input type = "file"></td>
+    </tr>
+    <tr>
+        <td><input type = "date"></td>
+    </tr>
+   <tr>
+    <td>
        <select id="country" name ="countrySelection" multiple>
         <option>Select</option>
         <option value ="usa">USA</option>
@@ -55,11 +62,9 @@
             <input list="browser">
             <datalist id="browser">
                 <option value ="IE">
-                    <option value ="Chrome">
-                        <option value ="Safari">
-                        </datalist>
-
-                </option>    
+                <option value ="Chrome">
+                <option value ="Safari">
+             </datalist>          
         </td>
     </tr>
         </table><br><br>
@@ -67,8 +72,8 @@
         <input type = "button"  name = "btn1" value ="click me" onclick="alert('Button Clicked')";>
 <fieldset>
     <legend>Personal Information</legend>
-    <label for="username">User Name:</label>
-    <input type="text" id ="uname" name ="uname" placeholder ="enter user name"/>
+    <label for="uname">User Name:</label>
+    <input type="text" id ="uname" name ="uname" placeholder ="enter user name"/><br><br>
     <label for="add">Address:</label>
     <textarea id="add"></textarea>    
 </fieldset>

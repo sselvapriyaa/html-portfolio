@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Employee Interests Survey form</h1>
+    <form action ="/html-portfolio/Assignment2/response.html" method ="post">    
+    <table>
+        <tr>
+            <td><label for = "name">Enter your name:</label></td>
+            <td><input type="text" id ="name" name ="name" required placeholder ="enter your name"/></td>
+        </tr>
+        <tr>
+            <td><label for = "dept">Enter your department:</label></td>
+            <td><input type="text" id ="dept" name ="dept" required placeholder ="enter your dept"/></td>
+        </tr>
+        <tr>
+            <td><label for = "message">Tell us a little about yourself:</label></td>
+            <td><textarea id="message" rows ="5" cols ="30"></textarea></td>
+        </tr>
+    <tr>
+        <td><label for = "exercise">Do you exercise at home?</label></td> 
+        <td><input type="radio" id="type1" name="option" value="Yes"></td> 
+        <td><label for = "type1">Yes</label></td>       
+        <td><input type="radio" id="type2" name="option" value="No"></td>
+        <td><label for = "type2">No</label></td>
+        </tr> 
+        <tr>    
+         <td><label for = "topic">How do you like to read about your favorite topics?</label></td> 
+          <td><input type="checkbox" id = "topic1" name ="topic1" value = "Books"></td> 
+          <td><label for = "topic1">Books</label></td>         
+          <td><input type="checkbox" id = "topic2" name ="topic2" value = "Online resources"></td>
+          <td><label for = "topic2">Online resources</label></td>
+          <td><input type="checkbox" id = "topic3" name ="topic3" value = "Phone apps"></td>
+          <td><label for = "topic3">Phone apps</label></td>
+          <td><input type="checkbox" id = "topic4" name ="topic4" value = "Magazines"></td>
+          <td><label for = "topic4">Magazines</label></td>
+     </tr>          
+      <tr>               
+        <td><label for = "movie">What genre of movies do you like?</label></td>        
+       <td>
+           <select id="movie" name ="movieSelection">
+                <option>Comedy</option>
+                <option value ="drama">Drama</option>
+                <option value ="action">Action</option>
+                <option value ="western">Western</option>
+                <option value ="sports">Sports</option>
+            </select> 
+        </td>
+        </tr>        
+        </table><br><br>  
+<input type = "submit" name ="submit" value ="SUBMIT"> 
+<input type = "reset" name ="reset" value ="RESET"> 
+
+</form>
+</body>
+</html>
