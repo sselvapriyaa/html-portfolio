@@ -1,0 +1,89 @@
+/*a{
+    text-decoration: none;
+    color: grey;  
+}
+a{
+    text-decoration: none;   
+    color: #ff0000;  
+    color: #ff7700;  
+}*/
+a{
+    text-decoration: none; 
+    /*color:green;*/
+    color:#007700;
+}
+caption{  
+    /*background-color:rgb(130,103,156);*/
+    background-color:blueviolet;
+}
+p{    
+    text-align:center;
+}
+#amt{
+   direction: rtl;
+}
+legend{
+    text-transform:capitalize!important;
+}
+#form1{
+    text-shadow: 2px 2px 5px red;
+}
+*{
+    background-color: aquamarine;
+    margin: auto;
+} 
+.fontred{
+    color: red;
+}
+.fontcaps{
+    text-transform: uppercase;
+}
+div.fontgreen{
+    color: green;
+}
+ol,p{
+    text-transform:lowercase;
+}
+p.fontgreen{
+    color: green;
+    font-style: italic;
+}
+div p{
+    background-color: blueviolet;
+    font-style: normal;
+}
+/*div > p{
+    font-style: italic;
+}*/
+/* p is the child of span */
+span > p{
+    font-style: italic;
+}
+div+p{
+    font-size: x-small;
+}
+p ~ div{
+    background-color: yellowgreen;
+}
+table{
+    margin:auto;
+}
+/*div.fontstyle{
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 500;
+    font-variant: small-caps;*/
+    
+    /*font-size: 16px;*/
+   /*font-size: 1em;
+}*/
+div.fontstyle{
+    background-color: aliceblue;
+    /*font: oblique small-caps 2em Geogia;*/
+    font: oblique small-caps 1em Sofia;
+    text-shadow: 3px 3px 3px #ababab;  
+}
+tr:nth-child(even) {
+            background-color: maroon;
+    }
