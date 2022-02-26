@@ -8,22 +8,30 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
     <style>
     *{
-        background-color: aquamarine;      
+        background-color: rgba(198, 243, 227, 0.603);      
     }
     body{
     text-align: center;    
 } 
+ol{
+    list-style: none;
+}
+
 </style>
  <link rel ="stylesheet" href ="style1.css">
 </head>
 <body>
-    <h3 id ="heading2">
-        <u> Monthly Expense Report</u>
+    <h3 id ="heading1">
+        <u> Monthly Expense Report</u><br>
     </h3>    
-<form action ="/details.html"> 
-
-    <table>
-    
+    <p id = "section1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Duis non arcu erat. Maecenas feugiat dignissim mi quis eleifend. 
+        Sed vel nisl ornare, egestas risus sed, tempus est.         
+    </p>   
+<form action ="/details.html" method ="post"> 
+<form>
+    <table>    
         <tr>
             <td class ="lcolumn" width ="40%"><label for = "date">Date:</label>  </td>
             <td class ="rcolumn" width ="60%"><input type="date" id ="date" name ="date"></td>
@@ -63,15 +71,20 @@
         <td class ="rcolumn" width ="60%"><input type="number" id="misc" name="misc"></td>
     </tr>    
     <tr>
-    <td class ="bottom" colspan ="2"><input type = "submit" name = "submit" value ="Save"></td>
+   <td class ="bottom" colspan ="2"><input type = "submit" name = "submit" value ="Save"></td>
+ 
 </tr>
 </table><br>
 <div class ="fontstyle"> This section is for Emojis
 </div>
-<p style="color:green;background-color:black">&#128522; John</p>  
-<p> &#128522; Michael</p>  
-<p> &#128522; Simpson</p>  
-<p> &#128522; Johnson</p>  
+ <!--Ordered List-->
+ <ol>
+    <li> &#128522; John </li>
+    <li> &#128522; Michael </li>
+    <li> &#128522; Simpson </li>
+    <li> &#128522; Johnson </li>
+</ol>
+
 </form>
 </body>
 </html>

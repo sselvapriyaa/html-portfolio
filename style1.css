@@ -26,7 +26,7 @@
 td.lcolumn, #type1 {
     accent-color:maroon;
 }
-#heading2{
+#heading1{
     text-align: center;
     text-shadow: 2px 2px 5px red;
     font-size: 5vw;
@@ -36,6 +36,3 @@ div.fontstyle{
     font: oblique small-caps 1em Sofia;
     text-shadow: 3px 3px 3px #ababab;  
 } 
-div+p{ 
-    font-size: x-small;
-}   

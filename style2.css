@@ -1,5 +1,5 @@
 *{
-    background-color: aquamarine;
+    background-color: rgba(198, 243, 227, 0.603);  ;
     margin: auto;
 } 
 body{
@@ -12,9 +12,6 @@ a{
 th{
     text-transform: capitalize!important;
 }
-p:nth-child(even){
-    background-color: rgb(56, 206, 33);
-}
 table{
     border: solid red;
     width: 50vw;
@@ -23,8 +20,14 @@ table{
     text-align: center;
     padding: 5px; 
   }
-  
-
+  div+p{ 
+    font-size: x-small;
+}     
+#heading2{
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    font-size: 5vw;
+    }
 
    
    

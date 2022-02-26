@@ -1,0 +1,21 @@
+*{
+  background-color: rgba(198, 243, 227, 0.603);  ;
+  margin: auto;
+} 
+body{
+  text-align: center;  
+}
+#heading3{
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+  font-size: 5vw;
+  }
+td.lcolumn{
+    text-align: center;
+    padding: 5px;
+}
+td.rcolumn{
+    text-align: left;
+    padding: 5px;
+}
+ 

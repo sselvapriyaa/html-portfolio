@@ -1,0 +1,138 @@
+.parent{
+    border: 2px blue dotted;   
+}
+.box{
+    /*float: left;*/
+    display: inline;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+#two{
+    background: green;
+    top: 20px;
+     display: none;
+    /*left: 20px;
+    position: absolute;*/
+    position: relative;
+}
+.overflow{
+    background-color: coral;
+    border: 1px solid;
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+    /*overflow: hidden;
+    overflow: scroll;*/
+}
+img{
+    width: 150px;
+    height: 100px;
+    float: right;
+    overflow: auto;
+    /*float: none;*/
+}
+#div4{
+    float:right;
+    padding: 10px;
+    border: 2px solid;
+}
+#div5{
+    padding: 10px;
+    border: 2px solid;
+    clear: right;
+}
+#noclear{
+    border: 2px solid;
+    overflow: auto;
+}
+#img1{
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+#box1{
+    margin-top: 100px;
+    border: 1px solid;
+    padding: 20px;
+    width: 200px;
+    border: border-box;
+}
+
+.container{
+    padding: 1em;
+}
+.cell{
+    background-color: lightgreen;
+    padding: 1em;
+}
+.flex{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.flex > .cell{
+    flex-grow: 3;
+}
+.flex > .cell:nth-child(2){
+    flex-grow: 4
+}
+.grid{
+    display: grid;
+    /*grid-template-columns: 1fr 2fr 1fr 1fr;*/
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit,minmax(300px 1fr));
+   /* grid-template-columns: 50% 50%;*/
+    gap: 1em;
+}
+/*@media (min-width:600px){
+    grid{
+        grid-template-columns: repeat(3=2, 1fr);
+    }
+}*/
+/*#animation{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: my-animation;
+    animation-duration: 10s;
+    animation-iteration-count: 4;
+}*/
+#animation{
+    width: 100px;
+    height: 50px;
+    position:relative;
+    background-color: blue;
+    animation-name: new-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+/*@keyframes my-animation{
+    /*from {background-color: blue};
+    to{background-color: green;}*/
+    /*0% {background-color: blue};
+    25%{background-color: violet;}
+    50%{background-color: red;}
+    100%{background-color: lightsalmon;}
+}*/
+#div11{
+    animation-timing-function: linear;
+}
+#div22{
+    animation-timing-function: ease;    
+}
+#div33{
+    animation-timing-function: ease-in;   
+}
+#div44{
+    animation-timing-function: ease-out;   
+}
+#div55{
+    animation-timing-function: ease-in-out;   
+}
+@keyframes new-animation{
+    from {left: 0px;};
+   to{left: 250px;};   
+}
+
