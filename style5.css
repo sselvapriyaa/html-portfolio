@@ -1,9 +1,10 @@
-
+html:active{
+ background:yellow;
+}
  nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-   
+    margin: 0;  
 }
 nav li {
     display: inline;
@@ -12,18 +13,23 @@ nav li {
     margin: 0 5px 0 0;
 }
 nav li a {
-    color: #fff;
     text-decoration: none;
+    height: 30px;
     padding: 0 20px;    
-    background-color: #666;  
-
-}
-nav a:hover {
-    color:#000;
-    background-color: rgba(198, 243, 227, 0.603); 
-}
-nav .current{
+    color: #000000; 
     background-color: red;
 }
+nav li a:hover {
+    background-color: #33CC33;    
+}
+nav li a:focus, .active{
+    color:#ffffff;
+    background-color: purple;
+}
+nav li:active a{
+    background-color: blue;
+}
 
+
+ 
 
