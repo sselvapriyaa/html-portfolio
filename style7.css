@@ -1,0 +1,112 @@
+
+body{
+    margin: 30px;
+}
+.parent{
+    display: grid;   
+    background-color: lightgreen;
+    min-height: 100px;
+    font-size: 15px;
+    padding-top: 60px;
+    padding-left: 30px;
+      
+}
+.child{
+    display: grid;
+    grid-gap: 10px;
+}
+.column1{
+    display: grid; 
+    background-color: yellow;
+    grid-gap: 10px; 
+    font-size: 15px;
+    padding-top: 50px;
+    padding-left: 30px; 
+    padding: 1em;    
+}
+.label{
+    grid-row-start: 1;   
+}
+.yellowone{ 
+    background-color: white;
+    padding: 1em; 
+    grid-row-start:2; 
+    grid-column-start:1;
+    text-align: center;   
+}
+.yellowtwo{ 
+    background-color: white;
+    padding: 1em; 
+    grid-row-start:2;
+    grid-column-start:2;
+    text-align: center;        
+}
+.yellowthree{ 
+    background-color: white;
+    padding: 1em; 
+    grid-row-start:3; 
+    grid-column-start:1;
+    text-align: center;       
+}
+.yellowfour{ 
+    background-color: white;
+    padding: 1em; 
+    grid-row-start:3;  
+    grid-column-start:2;
+    text-align: center;     
+}
+.column2{
+    display: grid;
+    background-color: pink;
+    grid-gap: 10px; 
+    font-size: 15px;
+    padding-top: 40px;
+    padding-left: 30px; 
+    padding: 1em;     
+}
+.pinkone{
+    background-color: white;
+    padding: 1em; 
+    grid-row-start:2; 
+    grid-column-start:1;
+    text-align: center;          
+}
+.pinktwo{
+    background-color: white;
+    padding: 1em; 
+    grid-row-start:2;
+    grid-column-start:2;
+    text-align: center;   
+}
+.pinkthree{ 
+    background-color: white;
+    padding: 1em; 
+    grid-row-start:3; 
+    grid-column-start:1;
+    text-align: center;       
+}    
+.pinkfour{ 
+    background-color: white;
+    padding: 1em; 
+    grid-row-start:3;  
+    grid-column-start:2;
+    text-align: center;     
+}
+.column3{
+    background-color: lightblue;
+    grid-gap: 10px;
+    font-size: 15px;  
+    padding: 5em;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;  
+}
+.column4{    
+    background-color: orange;
+    grid-column-start: span 2;  
+    grid-gap: 10px; 
+    font-size: 15px;
+    padding: 5em; 
+}
+
