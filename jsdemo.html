@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+</head>
+<body>
+    <p id ="txtid">Before the script....</p>
+    <br>
+   User Name: <input type ="text" id ="uname" size ="20">
+    <br><br>
+    Password: <input type ="password" id ="pwd" size ="20"><br><br>
+   <button onclick ="changeColor()">click here..</button><br><br>
+    First Number: <input type ="number" id ="first" size ="20">
+    <br><br>
+    Second Number: <input type = "number" id ="second" size ="20">
+    Result: <input type = "number" id = "result" size ="2" >
+    <button onclick ="getSum()">Add</button>
+
+    <!--<p>After the script....</p>-->
+</body>
+    <script>
+       /* alert("Executing Script from within the HTML....");*/
+        console.log("Executing Script from within the HTML....") 
+        function changeColor(){
+            var name = document.getElementById("uname").value;
+            var password = document.getElementById("pwd").value;
+            if(name == ''|| password == ''){
+                alert('Username or Password cannot be blank')
+            } 
+            else{
+                alert('Welcome' +name);
+            }
+            /*alert('Hello' +name);*/
+           /* alert('button clicked');*/
+            document.body.style.backgroundColor ="cyan";
+            document.getElementById("txtid").innerHTML = "After Button Clicked";
+        }
+        function getSum(){
+            //use parseFloat(x); to change string to number
+a=10;
+b=20;
+console.log(parseFloat(a)+parseFloat(b));//this will give a+b=30
+//while
+consle.log(a+b); ////will give a+b=1020 [as String]
+
+
+            var a,b,c;
+           // console.log('value of a prior to assignment: '+a);
+            a = Number(document.getElementById("first").value);
+           // console.log('value of a prior to assignment: '+a);
+            b = Number(document.getElementById("second").value);  
+            //console.log(a+b);
+            c = a+b;
+            document.getElementById("result").value = c;
+        }  
+         
+    </script>
+</html>

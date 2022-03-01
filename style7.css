@@ -100,11 +100,11 @@ body{
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 4;  
+    grid-row-end: 3;  
 }
 .column4{    
     background-color: orange;
-    grid-column-start: span 2;  
+    grid-column-start: span 2;     
     grid-gap: 10px; 
     font-size: 15px;
     padding: 5em; 
