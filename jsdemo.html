@@ -16,7 +16,7 @@
     First Number: <input type ="number" id ="first" size ="20">
     <br><br>
     Second Number: <input type = "number" id ="second" size ="20">
-    Result: <input type = "number" id = "result" size ="2" >
+    Result: <input type = "number" id = "result" >
     <button onclick ="getSum()">Add</button>
 
     <!--<p>After the script....</p>-->
@@ -27,11 +27,11 @@
         function changeColor(){
             var name = document.getElementById("uname").value;
             var password = document.getElementById("pwd").value;
-            if(name == ''|| password == ''){
+            if(name == " "|| password == " "){
                 alert('Username or Password cannot be blank')
             } 
             else{
-                alert('Welcome' +name);
+                alert('Welcome' + name)
             }
             /*alert('Hello' +name);*/
            /* alert('button clicked');*/
@@ -40,11 +40,11 @@
         }
         function getSum(){
             //use parseFloat(x); to change string to number
-a=10;
+/*a=10;
 b=20;
-console.log(parseFloat(a)+parseFloat(b));//this will give a+b=30
+console.log(parseFloat(a)+parseFloat(b));//this will give a+b=30*/
 //while
-consle.log(a+b); ////will give a+b=1020 [as String]
+//consle.log(a+b); ////will give a+b=1020 [as String]
 
 
             var a,b,c;
