@@ -1,0 +1,38 @@
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;  
+    }
+    nav li {
+        display: inline;
+        border: solid;
+        border-width: 1px 1px 0 1px;
+        margin: 0 5px 0 0;
+    }
+    nav li a {
+        text-decoration: none;
+        height: 30px;
+        padding: 0 20px;    
+        color: #000000; 
+        background-color: red;
+    }
+    nav li a:hover {
+        background-color: #33CC33;    
+    }
+   /* nav li a:focus, .active{
+        color:#ffffff;
+        background-color: purple;
+    }
+    /*nav li:active a{
+        background-color: blue;
+    }*/
+ 
+    .active{
+     color:#ffffff;
+     background-color: purple;
+    }
+    
+    
+     
+    

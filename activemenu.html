@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href ="style9.css"> 
+    <title>Active Tabs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">  
+</head>
+<body>    
+<nav> 
+    <ul>
+        <li ><a href="expense.html" target = "myFrame" id ="expense" class = "active" onclick="makeActive(this.id)">Expense Form</a></li>
+        <li ><a href= "details.html" target = "myFrame" id ="details" onclick="makeActive(this.id)">Details Form</a></li>    
+        <li ><a href= "surveyform.html" target = "myFrame" id ="survey" onclick="makeActive(this.id)">Survey Form</a></li>         
+    </ul>
+</nav> 
+<iframe class ="display" src = "expense.html"  width="400" height="400" name="myFrame"></iframe>
+<script>
+        function makeActive(id){
+            alert(id);
+            if(id === "expense"){
+                document.getElementById("expense").className = "active";
+                document.getElementById("details").classList.remove("active");
+                document.getElementById("survey").classList.remove("active");
+            }
+            else if(id === "details"){
+                document.getElementById("details").className = "active";
+                document.getElementById("survey").classList.remove("active");
+                document.getElementById("expense").classList.remove("active");
+            }   
+            else if(id === "survey"){
+                document.getElementById("survey").className = "active";
+                document.getElementById("expense").classList.remove("active");
+                document.getElementById("details").classList.remove("active");
+            }   
+        }
+</script>
+</body>
+</head>
+</html>
