@@ -10,8 +10,7 @@
         color:#ffffff;
         text-align: center;
         padding: 20px 0;
-        text-shadow: 2px 2px 5px purple;
-        
+        text-shadow: 2px 2px 5px purple;    
       }  
       input {
         width: 300px; 
@@ -22,9 +21,11 @@
         text-align: center;  
         margin-top: 30px;  
         border-radius: 5px;  
-        border: 2px solid silver;  
-          
+        border: 2px solid silver;        
       }  
+      input:focus{
+        background-color: lightyellow;
+     } 
        .btn{  
         width: 90px;      
         padding: 10px 0;  

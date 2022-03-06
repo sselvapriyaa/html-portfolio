@@ -267,12 +267,12 @@ console.log(person2.age);
 console.log(person1.firstName);
 console.log(person1.getInfo()); 
 //calling ananomous function
-var js = (function(x) {
+/*var js = (function(x) {
     return x*x;
 }
 (10)); 
 console.log(typeof js);
-console.log(js);
+console.log(js);*/
 
 let num = Math.floor(Math.random() * 50) +1;
 
