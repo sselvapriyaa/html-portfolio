@@ -6,8 +6,6 @@ let num_guess = 0;
 
 function do_guess() {
     let guess = Number(document.getElementById("guess").value);
-    //console.log(guess);
-    //alert("Please enter a number between 1 and 50");
     let message = document.getElementById("message");
     
     /*if (isNaN(guess)) {
