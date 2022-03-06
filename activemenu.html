@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="w3-card-4" media="(prefers-color-scheme: light)" content="white">
     <link rel ="stylesheet" href ="style9.css"> 
     <title>Active Tabs</title>
+   <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">  
 </head>
-<body>    
+<body>   
+      
 <nav> 
     <ul>
         <li ><a href="expense.html" target = "myFrame" id ="expense" class = "active" onclick="makeActive(this.id)">Expense Form</a></li>
@@ -17,10 +20,10 @@
         <li ><a href= "surveyform.html" target = "myFrame" id ="survey" onclick="makeActive(this.id)">Survey Form</a></li>         
     </ul>
 </nav> 
-<iframe class ="display" src = "expense.html"  width="400" height="400" name="myFrame"></iframe>
+<iframe class ="display" src = "expense.html"  width="600" height="600" name="myFrame"></iframe>
 <script>
         function makeActive(id){
-            alert(id);
+            //alert(id);
             if(id === "expense"){
                 document.getElementById("expense").className = "active";
                 document.getElementById("details").classList.remove("active");

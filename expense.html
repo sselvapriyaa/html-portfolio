@@ -5,10 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Page</title>
-    <link rel ="stylesheet" href ="style1.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <!--<link rel="icon" href="/images/women1.ico" type="image/x-icon">-->
+
+    <!--<link rel ="stylesheet" href ="style1.css">-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">-->
     <style>
-    *{
+        
+    :root {
+  /* Creating a variable */
+  --theme-color: hsl(313, 71%, 81%);
+    
+  /* Variables can have any value allowed in CSS */
+  --border: .1rem silver solid;
+  
+  /* Variable nesting is possible */
+  --family: Arial, Helvetica, sans-serif; 
+  --variant: small-caps;
+  --size: 1.5rem;
+  
+  --font: var(--variant) var(--size)/1.5 var(--family);
+}
+
+/* Using a variable */
+.any-selector {
+  background: var(--theme-color);
+  border: var(--border);
+  /* further nesting possible */
+  font: italic var(--font);
+}       
+
+/* the not so relevant part */
+div {
+  width: 80%;
+  padding: 2rem
+}
+
+/*.container{
+    background: url(images/women1.ico) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 110px 0;
+
+}*/
+
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    background-color: #ffffff;
+  }
+  
+  h2{
+      font-size: 3rem;
+      color: #212614;
+      text-align: center;
+  }
+  h2 span{
+      color: #b7832f;
+      text-shadow: 2px 2px 5px red;
+      
+  }
+a{
+    text-decoration: none;
+    color: #b7832f;   
+}
+#section1{
+    font-weight: bold;
+    text-align: center;
+
+}
+#section2{
+    text-align: left;
+}
+#section3{
+    text-align: right;
+}
+.container{
+    border:silver solid;
+    background-color: #ffffff;
+   
+}
+   /* *{
         background-color: rgba(198, 243, 227, 0.603);      
     }
     body{
@@ -16,22 +94,61 @@
 } 
 ol{
     list-style: none;
-}
+}*/
 
 </style>
-
 </head>
 <body>
-    <h3 id ="heading1">
+    
+        <!--<img src="images/remotestarter9.jpg" alt="remotestarter">-->
+
+    <!--<h3 id ="heading1">
         <u> Monthly Expense Report</u><br>
-    </h3>    
-    <p id = "section1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Duis non arcu erat. Maecenas feugiat dignissim mi quis eleifend. 
-        Sed vel nisl ornare, egestas risus sed, tempus est.         
-    </p>   
-<form action ="/details.html" method ="post"> 
-<form>
+    </h3> -->   
+   
+
+<!--<form action ="/details.html" method ="post"> -->
+    <!--<div class="container">-->
+        
+        <div class ="any-selector"> 
+            <h2><span>Women's Empowerment</h2>
+        <img src="images/women1.jpg" alt="image not found">
+        <div class="container">
+        <p id = "section1">
+            "Women's empowerment can be conceptualized as 
+            increasing women's self-esteem, abilities to create 
+            rational decisions, and right to effect revolutionary
+            change for themselves and others".</p>
+            <p id = "section2">    
+            Female empowerment is frequently associated with variuos
+            periods in the history of the women's rights movement in
+            Western countries.
+            </p>
+            <p id ="section3"><a href ="https://ilmocean.com/women-empowerment-essay/">Read more in the link</a>
+        <!--<img src="images/women2.jpg" alt="image not found">-->
+    </p>
+</div>
+    </div>
+</body>
+</html>
+
+       <!--<p id = "section1">
+            Lorem ipsum dolor osit amet, consectetur adipiscing elit. 
+            Duis non arcu erat. Maecenas feugiat dignissim mi quis eleifend. 
+            Sed vel nisl ornare, egestas risus sed, tempus est.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Corporis et itaque expedita ab dolor nulla, debitis totam blanditiis tempore, 
+            minima culpa dicta maxime nemo? Harum, cum nihil! Vitae, id aliquid?         
+        </p>   
+    
+</body>
+</html>-->
+
+
+
+
+
+<!--<form>
     <table>    
         <tr>
             <td class ="lcolumn" width ="40%"><label for = "date">Date:</label>  </td>
@@ -77,9 +194,9 @@ ol{
 </tr>
 </table><br>
 <div class ="fontstyle"> This section is for Emojis
-</div>
+</div>-->
  <!--Ordered List-->
- <ol>
+ <!--<ol>
     <li> &#128522; John </li>
     <li> &#128522; Michael </li>
     <li> &#128522; Simpson </li>
@@ -88,4 +205,4 @@ ol{
 
 </form>
 </body>
-</html>
+</html>-->
