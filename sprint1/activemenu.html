@@ -44,30 +44,30 @@
       
 <nav> 
     <ul>
-        <li ><a href="expense.html" target = "myFrame" id ="expense" class = "active" onclick="makeActive(this.id)">Expense Form</a></li>
-        <li ><a href= "details.html" target = "myFrame" id ="details" onclick="makeActive(this.id)">Details Form</a></li>    
-        <li ><a href= "surveyform.html" target = "myFrame" id ="survey" onclick="makeActive(this.id)">Survey Form</a></li>         
+        <li ><a href="form1.html" target = "myFrame" id ="form1" class = "active" onclick="makeActive(this.id)">Women's Empowerment</a></li>
+        <li ><a href= "form2.html" target = "myFrame" id ="details" onclick="makeActive(this.id)">Harriet Tubman</a></li>    
+        <li ><a href= "form3.html" target = "myFrame" id ="survey" onclick="makeActive(this.id)">Malala Yousafzai</a></li>         
     </ul>
 </nav> 
-<iframe class ="display" src = "expense.html"  width="600" height="600" name="myFrame"></iframe>
+<iframe class ="display" src = "form1.html"  width="500" height="500" name="myFrame"></iframe>
 
 <script>
         function makeActive(id){
             //alert(id);
-            if(id === "expense"){
-                document.getElementById("expense").className = "active";
-                document.getElementById("details").classList.remove("active");
-                document.getElementById("survey").classList.remove("active");
+            if(id === "form1"){
+                document.getElementById("form1").className = "active";
+                document.getElementById("form2").classList.remove("active");
+                document.getElementById("form3").classList.remove("active");
             }
             else if(id === "details"){
-                document.getElementById("details").className = "active";
-                document.getElementById("survey").classList.remove("active");
-                document.getElementById("expense").classList.remove("active");
+                document.getElementById("form2").className = "active";
+                document.getElementById("form3").classList.remove("active");
+                document.getElementById("form1").classList.remove("active");
             }   
             else if(id === "survey"){
-                document.getElementById("survey").className = "active";
-                document.getElementById("expense").classList.remove("active");
-                document.getElementById("details").classList.remove("active");
+                document.getElementById("form3").className = "active";
+                document.getElementById("form1").classList.remove("active");
+                document.getElementById("form2").classList.remove("active");
             }   
         }
 </script>

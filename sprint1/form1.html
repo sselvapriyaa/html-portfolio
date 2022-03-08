@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page1</title>
+    <!--<link rel="icon" href="/images/women1.ico" type="image/x-icon">-->
+
+    <!--<link rel ="stylesheet" href ="style1.css">-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">-->
+    <style>
+        
+    :root {
+  /* Creating a variable */
+  --theme-color: hsl(313, 71%, 81%);
+    
+  /* Variables can have any value allowed in CSS */
+  --border: .1rem silver solid;
+  
+  /* Variable nesting is possible */
+  --family: Arial, Helvetica, sans-serif; 
+  --variant: small-caps;
+  --size: 1.5rem;
+  
+  --font: var(--variant) var(--size)/1.5 var(--family);
+}
+
+/* Using a variable */
+.any-selector {
+  background: var(--theme-color);
+  border: var(--border);
+  font: italic var(--font);
+}       
+
+div {
+  width: 90%;
+  padding: 2rem;
+}
+
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    background-color: #ffffff;
+  }
+  
+  h2{
+      font-size: 3rem;
+      color: #212614;
+      text-align: center;
+  }
+  h2 span{
+      color: #b7832f;
+      
+  }
+a{
+    text-decoration: none;
+    color: #b7832f;   
+}
+#section1{
+    font-weight: bold;
+    text-align: center;
+}
+#section2{
+    text-align: left;
+    font-size: 15px;
+}
+#section3{
+    text-align: right;
+}
+.container{
+   
+    border:silver solid;
+    background-color: #ffffff;
+   
+}
+img{
+    width:200px;
+    height: 300px;
+}
+
+</style>
+</head>
+<body>
+        
+        <div class ="any-selector"> 
+            <h2><span>Women's Empowerment</h2>
+        <img src="/images/women1.jpg" alt="image not found">
+        <div class="container">
+        <p id = "section1">
+        Every great dream begins with a 
+        dreamer. Always remember, you
+        have within you the strength, the
+        patience, and the passion to reach
+        for the stars to change the world.
+    </p>
+            <p id = "section2">    
+            Female empowerment is frequently associated with variuos
+            periods in the history of the women's rights movement in
+            Western countries. Empowering women means to give women 
+            the ability to make their own decisions. Women are 
+            suffering greatly at the hands of men over the decades. 
+            They were regarded as if they’ve never came into existence 
+            in previous eras. As if all rights, including the right to vote,
+            belonged solely to men. As time progressed, females became more 
+            conscious of their strength. The revolution for women’s empowerment
+            began there. Women’s suffrage had been a breath of fresh air even 
+            though they had previously been denied the right to take decisions. 
+            It made them responsible of their rights and the importance of forging 
+            their own path in society rather than relying on a man.
+            </p>
+            <p id ="section3"><a href ="https://ilmocean.com/women-empowerment-essay/">Read more in the link</a>
+        <!--<img src="images/women2.jpg" alt="image not found">-->
+    </p>
+</div>
+    </div>
+</body>
+</html>

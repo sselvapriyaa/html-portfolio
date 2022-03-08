@@ -217,7 +217,7 @@ function getSum(total, num){
 }
 console.log("Sum of all numbers: " +sum);
 
-let person = {
+/*let person = {
     firstName: 'Selva',
     lastName: 'Priya',
     play:()=>{
@@ -230,7 +230,7 @@ console.log(person.firstName + " " +person.lastName);
 
 person.country = 'India';
 console.log(person);
-console.log("Before: " ,person);
+console.log("Before: " ,person);*/
 
 //delete person.country;
 //console.log("After: " ,person);
@@ -242,11 +242,11 @@ for(const key in person){
 }
 person.play();*/
 
-/*function Person(firstName,lastName, age){
+function Person(firstName,lastName, age){
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
-} */
+} 
 function Person(firstName,lastName, age){ //Constructor function
     this.firstName = firstName;
     this.lastName = lastName;
@@ -272,11 +272,116 @@ console.log(person1.getInfo());
 }
 (10)); 
 console.log(typeof js);
-console.log(js);*/
+console.log(js);
 
 let num = Math.floor(Math.random() * 50) +1;
 
 console.log(num);
+
+/*console.log(this);
+function f(){
+    return this;
+}*/
+//console.log(f());
+
+/*let person = {
+    firstName: "John",
+    lastName: "Doe",
+    f: function getDetail(){
+        return this.firstName + " "+ this.lastName;
+    },
+}*/
+/*console.log(person.f());
+foo: function(){
+   const baz = () => this;
+   return baz;*/
+
+
+/*console.log(person.foo);
+console.log(person.bar);*/
+
+/*function getScores(){
+    return[10,20,30];
+}*/
+function getScores(){
+    return null;    
+}
+let[x=1,y=2,z=3,t=12,...args] = getScores() || [];
+let a =50, b=100;
+[a,b] =[b,a];
+
+//let[x,y,...args] = getScores();// Rest must be the last element
+/*console.log(x); 
+console.log(y);
+console.log(args);*/
+
+console.log(x); 
+console.log(y);
+console.log(z); 
+console.log(t);
+
+console.log("value of a is: " +a);
+console.log("value of b is: " +b);
+
+let person4 = {
+    firstName: 'John',
+    lastName: 'Doe'
+    //middleName: 'C.',
+    //currentAge: 28
+
+};
+let{firstName, lastName, middleName = '', currentAge: age1 =18  } = person4;
+console.log('middleName ' +middleName);
+//console.log(currentAge);
+console.log('Age ' +age1);
+let display = (person1) => console.log(person1.firstName, person1.lastName);
+
+let person5 = {
+    firstName: 'John',
+    lastName: 'Doe',
+    middleName: 'C.'
+};
+
+display(person1);
+
+let colors  = ["white","blue", "yellow","black","red","green"]
+ //let colors = [firstColor = "white",  secondColor ="blue", otherColors ="yellow", otherColors ="black", otherColors ="red",otherColors="green"];
+ let[firstColor,secondColor,...otherColors] = colors;
+ /*function getValue(){
+    return["white","blue","yellow"];
+}*/
+ //let[firstColor,secondColor,otherColors,...args1] = getValue();
+ console.log("First Color: " +firstColor);
+ console.log("First Color: " +secondColor);
+ console.log("Other Colors: " +otherColors);
+
+ /*let  displayClass =(secondHour) => console.log("Time to go to" + myClass.secondHour + "class");
+
+ let myClass = {
+     firstHour: "Ethics",
+     secondHour: "Programming",
+     thirdHour: "Biology"
+ }
+ displayClass(secondHour);*/
+
+ (function(){
+     console.log("Immediately invoked function")
+ })();
+
+ (function(a){
+    console.log(a*a)
+})(8);
+
+typeof(null);
+console.log(typeof(null));
+
+
+
+
+
+
+
+
 
 
 
