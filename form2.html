@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Tab Two</title>  
+    <style>
+     
+     :root {
+  /* Creating a variable */
+  --theme-color: hsl(313, 71%, 81%);
+    
+  /* Variables can have any value allowed in CSS */
+  --border: .1rem silver solid;
+  
+  /* Variable nesting is possible */
+  --family: Arial, Helvetica, sans-serif; 
+  --variant: small-caps;
+  --size: 1.5rem;
+  
+  --font: var(--variant) var(--size)/1.5 var(--family);
+}
+/* Using a variable */
+.any-selector {
+  background: var(--theme-color);
+  border: var(--border);
+  /* further nesting possible */
+  font: italic var(--font);
+
+/*background-image:url('women1.jpg');
+background-repeat: repeat;*/
+} 
+/*div {
+  width: 300px;
+  padding: 2rem;
+}*/
+
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    background-color: #ffffff;
+  }
+  
+  h3{
+      font-size: 3rem;
+      color: #212614;
+      text-align: center;
+  }
+  h3 span{
+      color: #b7832f;
+      
+  }
+a{
+    text-decoration: none;
+    color: #b7832f;   
+}
+#section1{
+    font-weight: bold;
+    text-align: left;
+}
+#section2{
+    text-align: left;
+    font-size: 20px;;
+}
+#section3{
+    text-align: right;
+}
+.container{
+    padding: 2rem;
+    /*width: 500px; */  
+    border:silver solid;
+    background-color: #ffffff;   
+}      
+   img{
+    width:200px;
+    height: 300px;
+}
+div {
+  width: 90%;
+  padding: 2rem;
+}
+    </style>
+
+</head>
+<body>
+
+    <div class ="any-selector"> 
+    <h3><span>Harriet Tubman</h3>
+   
+    <img src="./images/women7.jpg" alt="image not found" style="float: left; margin-right: 15px;" >
+    <div class="container">
+    <p id = "section1">  
+        Known as the “Moses of her people,” 
+        Harriet Tubman was enslaved, escaped, 
+        and helped others gain their freedom 
+        as a “conductor" of the Underground 
+        Railroad. Tubman also served as a scout,
+        spy, guerrilla soldier, and nurse for 
+        the Union Army during the Civil War. 
+        She is considered the first African 
+        American woman to serve in the military. 
+
+      </p> 
+    <p id = "section2"> 
+       Tubman's legacy lives on in the 
+       hearts and spirit of every American.
+       She has been honored with 
+       monuments and statues, schools
+       bear her name, and thousands of 
+       Americans daily travel along Harriet
+       Tubman roads, streets, and avenues.
+       In April 2016, the US Treasury
+       announced that she would 
+       become the first American 
+       woman pictured on currency 
+       in over 100 years. Tubman 
+       has been honored on a 
+       United States postage stamp.
+      </p>
+      <p id ="section3"><a href ="https://www.britannica.com/biography/Harriet-Tubman">Read more in the link</a>
+
+    </p>
+      </div>
+      </div>
+</html>
+</body>  

@@ -7,8 +7,44 @@
    <!--<link rel="icon" href="/images/car.ico" type="image/x-icon">-->
     <link rel="icon" href="/images/star.ico" type="image/x-icon">
    <!--<link rel ="icon" href="/images/global.png" type="image/png">-->  
+  
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>   
+
     </head>
     <body>
-        <h1>Home Page</h1>
+        <h>Home Page</h>
+        <button onclick ="getData()">GET DATA</button>
+        <script>
+            function getData(){
+                $.ajax({
+                    url: 'https://gorest.co.in/public/v2/users',
+                    type:'GET',
+                    data:{
+                        key:'value',
+                    },
+                    success:function(data){
+                        console.log(data[0]);
+                },
+                error: function(error){
+                    console.log(error);
+                }
+            });
+        };
+
+
+        </script>
+      <!--<p>Click here...</p>-->
+        <!--<button>click</button>
+        <script>
+            $(document).ready(function(){
+            $("p").text("Jquery in action on load");
+               // $("p").slideToggle();
+            })
+           $("p").click(function(){
+                $("p").text("Jquery in action");
+            })
+        </script>-->
+       <!--<p id ="demo"></p>-->
+        
     </body>
 </html>

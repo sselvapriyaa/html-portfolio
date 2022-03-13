@@ -1,0 +1,55 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+body{
+    background-color: #6b597e;   
+  }
+  #form{
+    width: 60%; 
+    height: 60%;
+    text-align: left;
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 20px 10px; 
+    line-height: 28px;
+  }
+  h1{  
+    font-size: 40px;  
+    font-weight: 600;
+    color:#ffffff;
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 2px 2px 5px purple;    
+  } 
+#submit{
+    color: aliceblue;
+    background-color: rgb(39, 97, 79);
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid silver;  
+    position: relative;
+    left: 40%;
+}
+ 
+#submit:hover{
+    background-color: rgb(212,100,79);
+    color: black;
+}
+.main{  
+    height: 600px;
+    width: 50%; 
+    background-color:lightcoral;
+    font-weight: 600;  
+    padding: 20px 0;  
+    font-size: 28px;  
+    text-align: center;  
+    margin-top: 50px;  
+    border-radius: 5px;  
+    border: 2px solid silver;  
+    color: black; 
+  }
+ 

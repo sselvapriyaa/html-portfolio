@@ -1,0 +1,26 @@
+*{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        font-weight: 500;
+        font-variant: small-caps;
+    }
+body{
+        background-color: #6b597e;   
+      }
+h1{    
+        font-size: 40px;  
+        font-weight: 600;
+        color:#000000;
+        text-align: center;
+        margin-top: 5rem;
+        padding: 20px 0;
+        text-shadow: 2px 2px 5px purple; 
+      }
+#message
+{ 
+        text-align: center;
+        color:#ffffff;
+        font-size: xx-large;
+        margin-top: 10rem;
+            
+}

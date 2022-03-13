@@ -17,7 +17,7 @@ let user = "Mike";
 console.log(user); */
 
 //Reclaration is allowed in var
-var user = "John";
+/*var user = "John";
 var user = "Mike";
 console.log(user); 
 
@@ -29,7 +29,7 @@ const COLOR = "red";
 console.log(COLOR);
 console.log(5/10);//
 console.log(5/0);// Infinity
-console.log("Test"/0);// NAN
+console.log("Test"/0);// NAN*/
 
 //let a = 10, b = 20;
 //console.log(`Sum of a and b is: ${a+b}`);//use backtick from keyboard Expression is always followed by $
@@ -39,7 +39,7 @@ console.log("Test"/0);// NAN
 /*let age = null;*/
 //console.log(typeof age);
 
-let age = "Test";
+/*let age = "Test";
 console.log(typeof(age));
 
 //console.log("Value of a is: " +a +" ,Value of b is: " +b);
@@ -47,7 +47,7 @@ console.log(typeof(age));
 console.log(5 == "5"); //compare 5 as a string with "5"
 console.log(5 === "5"); //strick equals compare both datatype and var
 console.log("5" === "5");//Assignment
-console.log('5' === "5");
+console.log('5' === "5");*/
 
 //let a = 10;
 //console.log(++a); //pre increment
@@ -106,7 +106,7 @@ else{
 
       
 
-   let str = 'Hi how are you?';
+   /*let str = 'Hi how are you?';
    //str[0] = 'hi';
    //console.log(str[0]);
 
@@ -117,31 +117,31 @@ else{
 /*random_number = Math.floor(Math.random()*10) + 1
 console.log(random_number);*/
 
-let names  = ["John", "Mike", "Peter", "Kevin"];
+/*let names  = ["John", "Mike", "Peter", "Kevin"];
 for(let i = 0; i < names.length; i++) {
     /*if(names[i].startsWith('P')){
         continue;
     }*/
-    console.log(names[i]);
+  /*  console.log(names[i]);
   }
 //console.log(names[1]);//
 //console.log('Array Length ' +names.length);
     console.log('Before: ' +names);
     //console.log(names.pop());
     console.log(names.shift());
-    console.log('After Shift:' +names);
+    console.log('After Shift:' +names);*/
 
     //console.log('After:' +names);
     //console.log(names.push('Sara'));
-    console.log(names.shift('Sara'));
+    /*console.log(names.shift('Sara'));
     console.log(names.unshift('Sara'));
 
     console.log('After Unshift:' +names);
-    console.log(names);
+    console.log(names);*/
     //console.log(names.slice(1,3));
     //console.log(names.slice(0,3));
 
-    let newNames = names;
+    /*let newNames = names;
     newNames.push('Raymond');
     console.log('After:' +names);
 
@@ -149,15 +149,15 @@ for(let i = 0; i < names.length; i++) {
         console.log(name);
     }*/
 
-    for(let name of names){
+    /*for(let name of names){
         console.log(name);
-    }
+    }*/
 
     /*names.length = 3;
     console.log('After manipulating the length: ' +names)*/
-    names[36] = 'Test';
+    /*names[36] = 'Test';
     console.log('After manipulating the length: ' +names);
-    console.log(names.length);
+    console.log(names.length);*/
 
     /*let hello = function(){ // function hello(){}
         console.log('Hello');
@@ -168,12 +168,12 @@ for(let i = 0; i < names.length; i++) {
     /*let test = function(){
         console.log('Arrow function demo');
     }*/
-    let test = function(a,b){
+    /*let test = function(a,b){
         let c = a+b;
         return c;
         console.log('Arrow function demo');
 
-    }
+    }*/
     /*let test1 = (a,b) =>{
         let c = a+b;
         return c;
@@ -185,7 +185,7 @@ for(let i = 0; i < names.length; i++) {
     //let test1 = (a, b) => console.log(a+b);
     //let test1 = (a, b) => {let c = a+b};
 
-    let test1 = (a,b) => {
+    /*let test1 = (a,b) => {
         let c = a+b;
         return c;
     }
@@ -215,7 +215,7 @@ let sum = numbers.reduce(getSum, 0);
 function getSum(total, num){
     return total+num;
 }
-console.log("Sum of all numbers: " +sum);
+console.log("Sum of all numbers: " +sum);*/
 
 /*let person = {
     firstName: 'Selva',
@@ -242,7 +242,7 @@ for(const key in person){
 }
 person.play();*/
 
-function Person(firstName,lastName, age){
+/*function Person(firstName,lastName, age){
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -265,7 +265,7 @@ let person3 = new Person('Peter','Waugh', 38);
 //console.log(person3.age);
 console.log(person2.age);
 console.log(person1.firstName);
-console.log(person1.getInfo()); 
+console.log(person1.getInfo()); */
 //calling ananomous function
 /*var js = (function(x) {
     return x*x;
@@ -303,7 +303,7 @@ console.log(person.bar);*/
 /*function getScores(){
     return[10,20,30];
 }*/
-function getScores(){
+/*function getScores(){
     return null;    
 }
 let[x=1,y=2,z=3,t=12,...args] = getScores() || [];
@@ -315,15 +315,15 @@ let a =50, b=100;
 console.log(y);
 console.log(args);*/
 
-console.log(x); 
+/*console.log(x); 
 console.log(y);
 console.log(z); 
-console.log(t);
+console.log(t);*/
 
-console.log("value of a is: " +a);
-console.log("value of b is: " +b);
+/*console.log("value of a is: " +a);
+console.log("value of b is: " +b);*/
 
-let person4 = {
+/*let person4 = {
     firstName: 'John',
     lastName: 'Doe'
     //middleName: 'C.',
@@ -351,9 +351,9 @@ let colors  = ["white","blue", "yellow","black","red","green"]
     return["white","blue","yellow"];
 }*/
  //let[firstColor,secondColor,otherColors,...args1] = getValue();
- console.log("First Color: " +firstColor);
+ /*console.log("First Color: " +firstColor);
  console.log("First Color: " +secondColor);
- console.log("Other Colors: " +otherColors);
+ console.log("Other Colors: " +otherColors);*/
 
  /*let  displayClass =(secondHour) => console.log("Time to go to" + myClass.secondHour + "class");
 
@@ -364,7 +364,7 @@ let colors  = ["white","blue", "yellow","black","red","green"]
  }
  displayClass(secondHour);*/
 
- (function(){
+ /*(function(){
      console.log("Immediately invoked function")
  })();
 
@@ -373,7 +373,84 @@ let colors  = ["white","blue", "yellow","black","red","green"]
 })(8);
 
 typeof(null);
-console.log(typeof(null));
+console.log(typeof(null));*/
+
+/*console.log(num);
+var num  = 1;
+
+var a1 = 5, b1 = 1;
+var obj ={ a1:10 }
+with(obj)
+{
+    alert(b1);
+}*/
+
+/*function getUsers(callback){
+   // let users =[];
+    setTimeout(() => {
+        callback([
+         
+            {username: 'John', email:'john@test.com'},
+            {username: 'Mark', email:'mark@test.com'}
+        ]);
+        
+    }, 1000);
+    //return users;
+}
+
+function findUser(username,callback){
+    getUsers((users) =>{
+    const user = users.find((user)=> user.username ===username);
+    callback(user);
+    });
+}
+
+findUser('Mark', console.log);*/
+
+let success = false;
+function getUsers(){
+    return new Promise((resolve,reject)=>{
+
+    // let users =[];
+     setTimeout(() => {
+       if(success){
+           resolve([
+          
+             {username: 'John', email:'john@test.com'},
+             {username: 'Mark', email:'mark@test.com'}
+         ]);
+        } else{
+            reject('Unable to get the user list');
+        }
+         
+     }, 1000);
+     //return users;
+ });
+}
+ function onSuccess(users){
+     console.log(users);
+ }
+ function onFailure(error){
+     console.log(error);
+ }
+ const promise = getUsers();
+
+ promise.then(onSuccess, onFailure);
+
+
+
+
+
+
+ /*function findUser(username,callback){
+     getUsers((users) =>{
+     const user = users.find((user)=> user.username ===username);
+     callback(user);
+     });
+ }
+ 
+ findUser('Mark', console.log)*/
+
 
 
 

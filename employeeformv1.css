@@ -8,10 +8,10 @@ body{
     background-color: #6b597e;   
   }
   #form{
-    width: 70%; 
+    width: 60%; 
     height: 60%;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: 10px;
     font-size: 20px;
     padding: 20px 10px; 
@@ -27,7 +27,7 @@ body{
   } 
 #submit{
     color: aliceblue;
-    background-color: coral;
+    background-color: rgb(39, 97, 79);
     text-align: center;
     border-radius: 8px;
     border: 2px solid silver;  
@@ -39,7 +39,7 @@ body{
     background-color: rgb(212,100,79);
     color: black;
 }
-.container{  
+.main{  
     height: 600px;
     width: 50%; 
     background-color:lightcoral;
@@ -52,3 +52,4 @@ body{
     border: 2px solid silver;  
     color: black; 
   }
+ 
