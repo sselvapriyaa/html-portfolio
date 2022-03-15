@@ -11,71 +11,56 @@ class Employeepay{
     };
 
 set empName(empName){
-    //console.log('Setter method is called...')
+
     if(empName === ""){
-        //alert("Employee name cannot be empty");
-        throw new Error("Employee name cannot be empty") 
+      throw new Error("Employee name cannot be empty");
     }
-    else{
         this.#empName = empName;
-    }
+    
 }
 get empName(){
     return this.#empName;
 }
 
 set empId(empId){
-    //console.log('Setter method is called...')
+    
     if(empId === ""){
-        //alert("Employee id cannot be empty");
-        throw new Error("Employee Id cannot be empty") 
-
+      throw new Error("Employee Id cannot be empty");
+    
     }
-    else{
-        this.#empId = empId;
-    }
+        this.#empId = empId;  
 }
 get empId(){
     return this.#empId;
 }
 
 set startDate(startDate){
-    //console.log('Setter method is called...')
-    if(startDate === ""){
-        throw new Error("Start date cannot be empty")  
-        //alert("Start date cannot be empty");
-    }
-    else{
+   
+    if(startDate === ""){    
+        throw new Error("Start date cannot be empty");
+    } 
         this.#startDate = startDate;
-    }
+    
 }
 get startDate(){
     return this.#startDate;
 }
 
 set hoursWorked(hoursWorked){
-    //console.log('Setter method is called...')
     if(hoursWorked === ""){
-        throw new Error("Hours worked cannot be empty")  
-        //alert("Hours Worked cannot be empty");
+        throw new Error("Hours worked cannot be empty");       
     }
-    else{
-        this.#hoursWorked = hoursWorked;
-    }
+        this.#hoursWorked = hoursWorked;    
 }
 get hoursWorked(){
     return this.#hoursWorked;
 }
 
 set designation(designation){
-    //console.log('Setter method is called...')
     if(designation === ""){    
-            throw new Error("Designation cannot be empty")       
+            throw new Error("Designation cannot be empty"); 
     }
-    else{
         this.#designation = designation;
-        
-    }
 }
 get designation(){
     return this.#designation;
@@ -89,12 +74,12 @@ get salary(){
 }
  toJSON(){
      return{
-         empName : this.empName,
-         empId : this.empId,
-         startDate : this.startDate,
-         hoursWorked : this.hoursWorked,
-         designation : this.designation,
-         salary : this.salary
+         empName : this.#empName,
+         empId : this.#empId,
+         startDate : this.#startDate,
+         hoursWorked : this.#hoursWorked,
+         designation : this.#designation,
+         salary : this.#salary
 
      }
  }
