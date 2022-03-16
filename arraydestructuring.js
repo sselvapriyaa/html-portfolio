@@ -1,5 +1,5 @@
 
-const sales = [
+var sales = [
     { item: "PS4 Pro", stock: 3, original: 399.99 },
     { item: "Xbox One X", stock: 1, original: 499.99, discount: 0.1 },
     { item: "Nintendo Switch", stock: 4, original: 299.99 },
