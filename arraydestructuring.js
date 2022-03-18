@@ -36,3 +36,4 @@ sales.forEach(function (listitem) {
     }
   });   
   console.log(saleitem);
+  
