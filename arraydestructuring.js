@@ -7,18 +7,22 @@ var sales = [
   ];
 var saleitem = [];
 sales.forEach(function (listitem) {
+  
     if (listitem.discount) {
+      
       var saleAmount = (listitem.original - listitem.original * listitem.discount);
-      var saleAmountrounded = Math.round((saleAmount + Number.EPSILON) * 100) /100;
-      var totalDiscount = (listitem.stock * saleAmountrounded);
-      var totalDiscountrounded = Math.round((totalDiscount + Number.EPSILON) * 100) /100;
+      //console.log('saleAmount',saleAmount);  
+      var saleAmountrounded = Math.trunc(saleAmount*100)/100;
+      var totalDiscount = (listitem.stock * saleAmount) ;
+      var totalDiscountrounded = Math.trunc(totalDiscount *100)/100;
+     
       saleitem.push({       
         Item: listitem.item,
         Stock: listitem.stock,
         Original: listitem.original,
         Discount: listitem.discount,
         Sale: saleAmountrounded,    
-        Total: totalDiscountrounded,       
+        Total:totalDiscountrounded,       
       });
     } else {
       saleitem.push({
@@ -26,13 +30,9 @@ sales.forEach(function (listitem) {
         Stock: listitem.stock,
         Original: listitem.original,
         Sale: listitem.original,
-        Total: (listitem.stock * listitem.original),
+        Total: listitem.stock * listitem.original,
+        
       });
     }
   });   
   console.log(saleitem);
-
-
-
-
-
